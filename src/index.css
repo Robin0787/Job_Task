@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+.robotoFont {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.alataFont {
+  font-family: "Alata", sans-serif;
+}
+.navLink {
+  @apply robotoFont text-black font-medium text-[30px] leading-[45px];
+}
+.primaryBtn {
+  background: linear-gradient(to right, #fb4738, #fe7d15);
+  @apply text-white p-[6px_12px] font-bold text-[12px] lg:p-[12px_26px] lg:text-[25px] rounded-[100px];
+}
+.heading {
+  @apply robotoFont text-primary font-bold text-[35px] leading-[39px] md:text-[80px] md:leading-[100px] lg:text-[100px] lg:leading-[120px] lg:tracking-tight;
+}
+.desc {
+  @apply alataFont text-secondary font-normal text-[15px] leading-[22px] md:text-[30px] md:leading-[45px];
+}
