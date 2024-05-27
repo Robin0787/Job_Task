@@ -26,6 +26,9 @@
 .desc {
   @apply alataFont text-secondary font-normal text-[15px] leading-[22px] md:text-[30px] md:leading-[45px];
 }
+.seeMoreBtn {
+  @apply alataFont text-black font-normal text-[15px] leading-[22px] lg:text-[30px] lg:leading-[45px] underline;
+}
 
 .sliderArrow {
   background: radial-gradient(50% 50% at 50% 50%, #fe7d15 0%, #fb4738 100%);

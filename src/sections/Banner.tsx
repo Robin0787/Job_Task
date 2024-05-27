@@ -18,9 +18,7 @@ const Banner = () => {
               of Africa region.
             </Description>
           </div>
-          <button className="alataFont text-black font-normal text-[30px] leading-[45px] underline">
-            See More
-          </button>
+          <button className="seeMoreBtn">See More</button>
         </div>
         <div>
           <img src={image} alt="banner_image" className="object-cover" />
@@ -45,9 +43,7 @@ const Banner = () => {
             Africa region.
           </Description>
         </div>
-        <button className="alataFont text-black font-normal text-[15px] leading-[22px] underline">
-          See More
-        </button>
+        <button className="seeMoreBtn">See More</button>
       </section>
     </section>
   );
