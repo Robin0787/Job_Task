@@ -29,28 +29,3 @@
 .seeMoreBtn {
   @apply alataFont text-black font-normal text-[15px] leading-[22px] lg:text-[30px] lg:leading-[45px] underline;
 }
-
-.sliderArrow {
-  background: radial-gradient(50% 50% at 50% 50%, #fe7d15 0%, #fb4738 100%);
-}
-.slideIcon {
-  @apply text-[#FB4738];
-}
-
-.slideHeading {
-  @apply robotoFont text-primary text-center font-bold text-[20px] leading-[23px] lg:text-[50px] lg:leading-[59px];
-}
-
-.slideIconBox {
-  border-image-source: linear-gradient(
-    360deg,
-    #441355 100%,
-    rgba(112, 59, 175, 0) 72.95%
-  );
-  background-color: #ebeeea;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @apply border-[3px] p-5 lg:p-11;
-}

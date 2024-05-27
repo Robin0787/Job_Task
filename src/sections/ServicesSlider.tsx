@@ -18,7 +18,6 @@ interface TService {
 }
 
 const ServicesSlider = () => {
-  // Create array with 500 slides
   const [slides] = useState<TService[]>([
     {
       title: "Baseline surveys",
@@ -55,7 +54,7 @@ const ServicesSlider = () => {
       <div className="py-10 overflow-hidden w-[87%] mx-auto">
         <Swiper
           modules={[Virtual, Navigation, Pagination]}
-          initialSlide={3}
+          initialSlide={2}
           breakpoints={{
             // Breakpoint for small devices
             320: {
@@ -80,7 +79,7 @@ const ServicesSlider = () => {
         >
           {slides.map((slideContent, index) => (
             <SwiperSlide key={index} virtualIndex={index}>
-              <div className="min-h-[255px] min-w-[240px] max-w-[430px] max-h-[518px] slideItem cursor-pointer">
+              <div className="h-[255px] min-w-[240px] max-w-[430px] lg:h-[500px] slideItem cursor-pointer">
                 <div className="w-full h-full flex flex-col justify-center items-center gap-4 lg:gap-6 p-5 lg:p-[35px]">
                   <div className="slideIconBox">{slideContent.icon}</div>
                   <h2 className="slideHeading">{slideContent.title}</h2>

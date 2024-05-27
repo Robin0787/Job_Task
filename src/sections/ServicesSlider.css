@@ -1,3 +1,10 @@
+.robotoFont {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.alataFont {
+  font-family: "Alata", sans-serif;
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -37,4 +44,26 @@
     transform: translateY(-35px);
     transition: transform 0.5s ease-in-out;
   }
+}
+
+.sliderArrow {
+  background: radial-gradient(50% 50% at 50% 50%, #fe7d15 0%, #fb4738 100%);
+}
+.slideIcon {
+  @apply text-[#FB4738];
+}
+
+.slideHeading {
+  @apply robotoFont text-primary text-center font-bold text-[20px] leading-[23px] lg:text-[50px] lg:leading-[59px];
+}
+
+.slideIconBox {
+  @apply border-[3px] lg:border-[5px] p-5 lg:p-11;
+  position: relative;
+  border-color: #441355b7;
+  background-color: #ebeeea;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
