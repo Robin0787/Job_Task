@@ -19,7 +19,7 @@ const TrackRecords = () => {
           </div>
           <img src={image} alt="track_records" className="object-cover" />
         </article>
-        <article className="border w-full lg:w-1/2"></article>
+        {/* <article className="border w-full lg:w-1/2"></article> */}
       </section>
     </section>
   );
