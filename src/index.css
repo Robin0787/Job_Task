@@ -38,22 +38,19 @@
 }
 
 .slideHeading {
-  @apply robotoFont text-primary font-bold text-[20px] leading-[23px] lg:text-[50px] lg:leading-[59px];
+  @apply robotoFont text-primary text-center font-bold text-[20px] leading-[23px] lg:text-[50px] lg:leading-[59px];
 }
 
 .slideIconBox {
-  border: 5px solid;
-
   border-image-source: linear-gradient(
     360deg,
     #441355 100%,
     rgba(112, 59, 175, 0) 72.95%
   );
-
   background-color: #ebeeea;
-  padding: 45px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @apply border-[3px] p-5 lg:p-11;
 }

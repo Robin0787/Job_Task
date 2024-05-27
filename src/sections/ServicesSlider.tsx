@@ -47,25 +47,41 @@ const ServicesSlider = () => {
   ]);
 
   return (
-    <div className=" relative">
+    <div className="relative">
       <div className="w-full absolute top-1/2 h-[104px] -translate-y-1/2 flex justify-between items-center">
-        <button className="swiper-button-prev relative top-0 z-10"></button>
-        <button className="swiper-button-next relative top-0 z-10"></button>
+        <button className="swiper-button-prev relative top-0 z-10 -left-2 xl:left-1"></button>
+        <button className="swiper-button-next relative top-0 z-10 -left-2 xl:left-1"></button>
       </div>
-      <div className="py-10  overflow-hidden w-[87%] mx-auto">
+      <div className="py-10 overflow-hidden w-[87%] mx-auto">
         <Swiper
           modules={[Virtual, Navigation, Pagination]}
-          slidesPerView={3}
-          initialSlide={2}
+          initialSlide={3}
+          breakpoints={{
+            // Breakpoint for small devices
+            320: {
+              slidesPerView: 1,
+            },
+            // Breakpoint for medium devices
+            768: {
+              slidesPerView: 2,
+            },
+            // Breakpoint for extra-large devices
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
           centeredSlides={true}
-          navigation={false}
-          spaceBetween={45}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }}
+          spaceBetween={60}
           virtual
         >
           {slides.map((slideContent, index) => (
             <SwiperSlide key={index} virtualIndex={index}>
-              <div className="h-[518px] w-[430px]  slideItem cursor-pointer">
-                <div className="w-full h-full flex flex-col justify-center items-center gap-6 p-[35px] relative">
+              <div className="min-h-[255px] min-w-[240px] max-w-[430px] max-h-[518px] slideItem cursor-pointer">
+                <div className="w-full h-full flex flex-col justify-center items-center gap-4 lg:gap-6 p-5 lg:p-[35px]">
                   <div className="slideIconBox">{slideContent.icon}</div>
                   <h2 className="slideHeading">{slideContent.title}</h2>
                   <button className="seeMoreBtn">See More</button>
