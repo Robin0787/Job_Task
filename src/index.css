@@ -29,3 +29,24 @@
 .seeMoreBtn {
   @apply alataFont text-black font-normal text-[15px] leading-[22px] lg:text-[30px] lg:leading-[45px] underline;
 }
+
+/* Recent Track Records Page Accordion CSS */
+
+.accordionTitle {
+  @apply alataFont font-normal text-[18px] leading-[15px] text-justify lg:text-[30px] lg:leading-[30px] text-[#121214] p-[10px] lg:p-[25px];
+}
+.accordionHeading {
+  @apply alataFont font-normal text-white text-[12px] leading-[12px] lg:text-[20px] lg:leading-[30px];
+}
+
+.accordionDesc1 {
+  @apply alataFont font-normal text-[12px] leading-[12px] text-justify lg:text-[20px] lg:leading-[30px] text-primary;
+}
+.accordionDesc2 {
+  @apply alataFont text-secondary font-normal text-[10px] leading-[12px] lg:text-[15px] lg:leading-[22px] text-justify;
+}
+
+.table
+  :where(thead tr, tbody tr:not(:last-child), tbody tr:first-child:last-child) {
+  border-bottom-width: 0;
+}
